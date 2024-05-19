@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras import metric_cards
+import os
 
 def run():
 
@@ -19,8 +20,11 @@ def run():
         color_name="violet-70"
     )
 
-    file_path = r'data\analises.xlsx'
-    df = pd.read_excel(file_path)
+    # Definindo o caminho da imagem de forma dinâmica
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    excel_path = os.path.join(current_dir, 'analises.xlsx')
+
+    df = pd.read_excel(excel_path)
 
     nomes_colunas = ['ID', "CONTINENT", 'PAIS', 'TIPO PRODUTO', 'CANAL VENDA','PRIORIDADE','PEDIDO','ID PEDIDO', 'DATA ENVIO', 'UNIDADE','PRECO UNIT', 'CUSTO UNIT', 'VENDA TOTAL','CUSTO TOTAL']
     

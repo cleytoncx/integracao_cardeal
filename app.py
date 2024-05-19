@@ -34,3 +34,19 @@ st.divider()
 
 st.subheader("PRESTAÇÃO DE CONTAS")
 st.write("A prestação de contas na expedição envolve registrar todas as atividades relacionadas ao envio de produtos, incluindo documentação, confirmação de entrega e reconciliação de registro financeiros.")
+
+st.divider()
+
+st.subheader("TRANSBORDO")
+st.write("O Transbordo é o processo de transferir carga de um veículo ou local para outro, frequentemente, a eficiência no transbordo pode reduzir custos e melhorar os tempos de entregas.")
+
+st.divider()
+
+st.subheader("FUSION")
+st.write("O FUSION ele é uma ferramenta que oferece funcionalidade para geração de relatórios em tempo real, que facilita monitoramento de transporte e a comunicação com motorista e operador, e também facilita ver os status das entregas.")
+
+st.divider()
+
+st.subheader("EFICIENCIA: OTIF E ONTIME")
+st.success("OTIF: assegura que os produtos sejam entregues no tempo e na quantidade correta.")
+st.success("ONTIME: Foca especificamente a pontualidade das entregas, crucial para a satisfação do cliente.")

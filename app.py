@@ -1,6 +1,17 @@
 import streamlit as st 
 import os
 
+# Aplica formatação css da página
+hide_st_style = """
+                        <style>
+                        header {visibility: hidden}
+                        .block-container {padding:25px}
+                        #MainMenu {visibility:hidden;}
+                        footer {visibility:hidden;}
+                        </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # configurações
 
 st.set_page_config(

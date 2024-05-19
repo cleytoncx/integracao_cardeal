@@ -1,6 +1,14 @@
 import streamlit as st 
 import os
 
+
+
+# configurações
+
+st.set_page_config(
+    page_title="Análista de Transporte",page_icon="🚚", layout="centered"
+)
+
 # Aplica formatação css da página
 hide_st_style = """
                         <style>
@@ -11,12 +19,6 @@ hide_st_style = """
                         </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-
-# configurações
-
-st.set_page_config(
-    page_title="Análista de Transporte",page_icon="🚚", layout="centered"
-)
 
 # Definindo o caminho da imagem de forma dinâmica
 current_dir = os.path.dirname(os.path.abspath(__file__))

@@ -1,11 +1,12 @@
 import streamlit as st 
 import os
+import contents.analytics as ans
 
 
 
 # configurações
 st.set_page_config(
-    page_title="Análista de Transporte",page_icon="🚚", layout="centered"
+    page_title="Análista de Transporte",page_icon="🚚", layout="wide"
 )
 
 # Aplica formatação css da página
@@ -41,9 +42,9 @@ st.divider()
 
 # MENU DA PAGINA
 
-menu = ["Torre de Controle", "Prestação de Contas", "Transbordo", "Fusio","OTIF E ONTIME"]
+menu = ["Torre de Controle", "Prestação de Contas", "Transbordo", "Fusio","OTIF E ONTIME", "Expedição", "Analises"]
 
-tab_torre, tab_prestacao, tab_transbordo, tab_fusion, tab_otiff = st.tabs(menu)
+tab_torre, tab_prestacao, tab_transbordo, tab_fusion, tab_otiff, tab_expedicao, tab_analises = st.tabs(menu)
 
 with tab_torre:
     st.subheader("Torre de Controle: Atendimento aos chamados")
@@ -54,8 +55,18 @@ with tab_prestacao:
     st.write("A prestação de contas na expedição envolve registrar todas as atividades relacionadas ao envio de produtos, incluindo documentação, confirmação de entrega e reconciliação de registro financeiros.")
 
 with tab_transbordo:
-    st.subheader("TRANSBORDO")
-    st.write("O Transbordo é o processo de transferir carga de um veículo ou local para outro, frequentemente, a eficiência no transbordo pode reduzir custos e melhorar os tempos de entregas.")
+    
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+        image_transbordo = os.path.join(current_dir, 'imagens', 't2.jpg')
+        st.image(image_transbordo)
+
+    with col2:
+        st.subheader("TRANSBORDO")
+        st.write("O Transbordo é o processo de transferir carga de um veículo ou local para outro, frequentemente, a eficiência no transbordo pode reduzir custos e melhorar os tempos de entregas, Dentro desse processo, a utilização do datacanhoto que registra a data da transação na cópia retida pelo emissor o datacanhoto fortalece a segurança e a transparência das operações comerciais.")
+        st.divider()
+       
 
 with tab_fusion:
     st.subheader("FUSION")
@@ -66,3 +77,9 @@ with tab_otiff:
     st.success("OTIF: assegura que os produtos sejam entregues no tempo e na quantidade correta.")
     st.success("ONTIME: Foca especificamente a pontualidade das entregas, crucial para a satisfação do cliente.")
 
+with tab_expedicao:
+    st.subheader("EXPEDIÇÃO") 
+    st.write("O planejamento de carga é fundamental para garantir que os produtos cheguem ao seu destino de forma eficiente e segura,  O planejamento determina as melhores rotas para o transporte, os prazos necessários para a entrega  Emitir documentos como o Conhecimento de Transporte Eletrônico (CTe)")
+
+with tab_analises:
+    ans.run()

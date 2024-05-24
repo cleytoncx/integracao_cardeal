@@ -51,7 +51,7 @@ with tab_torre:
 
 with tab_prestacao:
     st.subheader("PRESTAÇÃO DE CONTAS")
-    st.write("A prestação de contas na expedição envolve registrar todas as atividades relacionadas ao envio de produtos, incluindo documentação, confirmação de entrega e reconciliação de registro financeiros.")
+    st.write("Na expedição, a prestação de contas essa atividade está ligada ao envio de produtos. Isso vai desde a documentação inicial, que inclui ordens de serviço e faturas, até a confirmação de entrega ao Cliente,")
 
 with tab_transbordo:
     

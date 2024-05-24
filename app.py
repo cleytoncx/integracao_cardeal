@@ -47,7 +47,7 @@ tab_torre, tab_prestacao, tab_transbordo, tab_fusion, tab_otiff, tab_expedicao, 
 
 with tab_torre:
     st.subheader("Torre de Controle: Atendimento aos chamados")
-    st.write("A torre de controle é responsável por monitorar e gerenciar todas as operações de transporte. O objetivo é garantir uma resposta rápida e eficiente para manter as operações em movimento e resolver problemas rapidamente.")
+    st.write("A torre de controle desempenha um papel crucial no monitoramento e na gestão de todas as operações de transporte. Sua função principal é supervisionar o fluxo contínuo de cargas, assegurando que tudo funcione de maneira organizada e sem interrupções. Para alcançar esse objetivo, a torre de controle utiliza sistemas de comunicação para resolver rapidamente quaisquer problemas que possam surgir. Isso inclui desde atrasos inesperados até problemas técnicos.")
 
 with tab_prestacao:
     st.subheader("PRESTAÇÃO DE CONTAS")

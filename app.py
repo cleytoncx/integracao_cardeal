@@ -51,7 +51,7 @@ with tab_torre:
 
 with tab_prestacao:
     st.subheader("PRESTAÇÃO DE CONTAS")
-    st.write("A prestação de contas envolve a transparência e o registro relacionados à movimentação de produtos. Inicia com a documentação desde o recebimento dos produtos até sua distribuição final, a prestação de contas é essencial para garantir a eficiência operacional.")
+    st.write("A prestação de contas envolve a transparência e o registro relacionados à movimentação de cargas. Inicia com a documentação desde o recebimento dos produtos até sua distribuição final, a prestação de contas é essencial para garantir a eficiência operacional.")
 
 with tab_transbordo:
     
